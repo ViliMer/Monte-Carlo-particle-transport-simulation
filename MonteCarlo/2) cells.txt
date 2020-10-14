@@ -1,0 +1,13 @@
+cell_start
+truncated_cylinder cylinder 0 0 2.05 plane1 0 plane2 7.1 axis z complemented 0
+truncated_cylinder cylinder 0 0 2 plane1 0.05 plane2 7.05 axis z complemented 1
+cell_end
+cell_start
+truncated_cylinder cylinder 0 0 2 plane1 0.05 plane2 3.55 axis z complemented 0
+cell_end
+cell_start
+truncated_cylinder cylinder 0 0 2 plane1 3.55 plane2 7.05 axis z complemented 0
+cell_end
+cell_start
+truncated_cylinder cylinder 0 0 2.05 plane1 0 plane2 7.05 axis z complemented 1
+cell_end

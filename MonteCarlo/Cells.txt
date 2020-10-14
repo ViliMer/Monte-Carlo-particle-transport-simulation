@@ -1,0 +1,20 @@
+cell_start
+truncated_cylinder cylinder 0 0 1 plane1 1 plane2 2 axis z
+cuboid xplane1 -1 xplane2 1 yplane1 -1 yplane2 1 zplane1 -1 zplane2 1
+cell_end
+
+cell_start
+square_prism xplane1 -1 xplane2 1 yplane1 -1 yplane2 1 axis z´
+cell_end
+
+cell_start
+sphere 0 0 0 1 1
+cell_end
+
+cell_start
+plane 1 x 0
+cell_end
+
+cell_start
+cylinder 1 0 2 z 0
+cell_end

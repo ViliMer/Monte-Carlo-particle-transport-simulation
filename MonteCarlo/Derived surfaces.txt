@@ -1,0 +1,3 @@
+truncated_cylinder cylinder 0 0 1 plane1 1 plane2 2 axis z complemented 0
+cuboid xplane1 -1 xplane2 1 yplane1 -1 yplane2 1 zplane1 -1 zplane2 1 complemented 0
+square_prism xplane1 -1 xplane2 1 yplane1 -1 yplane2 1 axis z complemented 0

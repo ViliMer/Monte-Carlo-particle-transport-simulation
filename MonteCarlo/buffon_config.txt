@@ -1,0 +1,4 @@
+N 1000
+M 1000
+needle_length 1
+spacing 2
