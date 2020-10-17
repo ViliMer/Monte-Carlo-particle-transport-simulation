@@ -67,7 +67,7 @@ float quadratic_surface::distance_equation(float x, float y, float z, float u, f
 		else if (dist_plus > 0) return dist_plus;
 		else if (dist_minus > 0) return dist_minus;
 	}
-	// Here either determinant is negative (no solutions exist), or both solutions are negative
+	// Here either discriminant is negative (no solutions exist), or both solutions are negative
 	return -1;
 }
 

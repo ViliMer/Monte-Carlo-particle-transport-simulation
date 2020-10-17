@@ -1,11 +1,6 @@
 #include "pch.h"
 #include "input_reader.h"
 
-void test_function()
-{
-	std::cout << "Hello world" << std::endl;
-}
-
 vector<string> words(string str) {
 	stringstream s(str);
 	vector<std::string> segments;
@@ -417,6 +412,7 @@ void parse_line(vector<string> &w, vector<quadratic_surface> &elementary_surface
 			}
 		}
 
+		// There is a problem with the axis
 		plane new_xplane1(xplane1_offset, axis, false);
 		plane new_xplane2(xplane2_offset, axis, false);
 		plane new_yplane1(yplane1_offset, axis, false);

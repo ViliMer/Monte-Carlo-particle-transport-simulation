@@ -45,7 +45,7 @@ float derived_surface::distance_equation(float x, float y, float z, float u, flo
 		}
 	}
 
-	if (distance = 1000000000) return -1;
+	if (distance == 1000000000) return -1;
 	else return distance;
 }
 

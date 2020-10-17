@@ -11,8 +11,6 @@
 
 using namespace std;
 
-void test_function();
-
 vector<string> words(string str);
 void loadMCVariables(int &N, int &M);
 void loadBuffonVariables(int &N, int &M, float &needle_length, float &spacing);

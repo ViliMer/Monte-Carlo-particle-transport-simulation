@@ -7,6 +7,7 @@ cylinder 0 0 0.412 z 0
 cell_end
 cell_start
 square_prism xplane1 -0.665 xplane2 0.665 yplane1 -0.665 yplane2 0.665 axis z complemented 0
+cylinder 0 0 0.475 z 1
 cell_end
 cell_start
 square_prism xplane1 -0.665 xplane2 0.665 yplane1 -0.665 yplane2 0.665 axis z complemented 1
