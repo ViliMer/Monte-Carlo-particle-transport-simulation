@@ -448,3 +448,59 @@ void load_cells(string fn, vector<cell> &arr) {
 	}
 
 }
+
+
+void load_cross_section_data(string fn, ENDF_obj &ENDF) {
+	string line;
+	ifstream file;
+	file.open(fn);
+	if (file.is_open()) {
+
+		// Parse first line
+		getline(file, line);
+		vector<string> w = words(line);
+		ENDF.symbol = w[0];
+		ENDF.Z = std::stoi(w[1]);
+		ENDF.A = std::stoi(w[2]);
+		ENDF.AW = std::stof(w[3]);
+		ENDF.T = std::stof(w[4]);
+
+		// Parse second line
+		getline(file, line);
+		w = words(line);
+		ENDF.NNU = std::stof(w[0]);
+
+		// Parse nubar data
+		for (int i = 0; i < ENDF.NNU; i++) {
+			getline(file, line);
+			w = words(line);
+			ENDF.energies.push_back(std::stof(w[0]));
+			ENDF.nubars.push_back(std::stof(w[1]));
+		}
+
+		// Parse reaction
+		int j = 0;
+		while (getline(file, line)) {
+			// Parse first line of a reaction
+			w = words(line);
+			ENDF.MTs.push_back(std::stoi(w[0]));
+			ENDF.Qs.push_back(std::stof(w[1]));
+			ENDF.NEs.push_back(std::stoi(w[2]));
+
+			// Parse rest of the line of the same reaction
+			std::vector<float> cs_energies;
+			std::vector<float> cross_sections;
+			ENDF.cs_energies.push_back(cs_energies);
+			ENDF.cross_sections.push_back(cross_sections);
+
+			for (int i = 0; i < ENDF.NEs[j]; i++) {
+				getline(file, line);
+				w = words(line);
+				ENDF.cs_energies[j].push_back(std::stof(w[0]));
+				ENDF.cross_sections[j].push_back(std::stof(w[1]));
+			}
+
+			j++;
+		}
+	}
+}
