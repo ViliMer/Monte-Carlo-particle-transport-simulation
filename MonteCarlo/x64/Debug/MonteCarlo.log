@@ -1,0 +1,9 @@
+﻿  MonteCarlo.cpp
+c:\users\vili\source\repos\montecarlo\montecarlo\montecarlo.cpp(49): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+c:\users\vili\source\repos\montecarlo\montecarlo\montecarlo.cpp(162): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+c:\users\vili\source\repos\montecarlo\montecarlo\montecarlo.cpp(174): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+c:\users\vili\source\repos\montecarlo\montecarlo\montecarlo.cpp(307): warning C4244: 'argument': conversion from 'float' to 'const unsigned __int64', possible loss of data
+  neutron.cpp
+c:\users\vili\source\repos\montecarlo\montecarlo\neutron.cpp(20): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+  Generating Code...
+  MonteCarlo.vcxproj -> C:\Users\Vili\source\repos\MonteCarlo\x64\Debug\MonteCarlo.exe

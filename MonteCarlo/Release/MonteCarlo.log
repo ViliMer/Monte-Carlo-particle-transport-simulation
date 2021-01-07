@@ -1,0 +1,14 @@
+﻿  pch.cpp
+  cell.cpp
+c:\users\vili\source\repos\montecarlo\montecarlo\cell.cpp(19): warning C4305: 'initializing': truncation from 'double' to 'float'
+  derived_surface.cpp
+c:\users\vili\source\repos\montecarlo\montecarlo\derived_surface.cpp(13): warning C4305: 'initializing': truncation from 'double' to 'float'
+c:\users\vili\source\repos\montecarlo\montecarlo\derived_surface.cpp(28): warning C4244: 'initializing': conversion from 'unsigned int' to 'float', possible loss of data
+  MonteCarlo.cpp
+c:\users\vili\source\repos\montecarlo\montecarlo\montecarlo.cpp(46): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+  input_reader.cpp
+  quadratic_surface.cpp
+  Generating code
+  All 847 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  Finished generating code
+  MonteCarlo.vcxproj -> C:\Users\Vili\source\repos\MonteCarlo\Release\MonteCarlo.exe

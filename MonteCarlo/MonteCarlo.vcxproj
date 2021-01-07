@@ -107,6 +107,7 @@
       <ConformanceMode>true</ConformanceMode>
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
       <AdditionalIncludeDirectories>C:\Users\Vili\source\SFML\SFML-2.5.1\include</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -159,16 +160,23 @@
   <ItemGroup>
     <ClInclude Include="cell.h" />
     <ClInclude Include="derived_surface.h" />
+    <ClInclude Include="ENDF_obj.h" />
+    <ClInclude Include="neutron.h" />
+    <ClInclude Include="neutrons.h" />
     <ClInclude Include="pch.h" />
     <ClInclude Include="quadratic_surface.h" />
     <ClInclude Include="resource.h" />
     <ClInclude Include="input_reader.h" />
+    <ClInclude Include="vec3f.h" />
     <ClInclude Include="visualizer.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="cell.cpp" />
     <ClCompile Include="derived_surface.cpp" />
+    <ClCompile Include="ENDF_obj.cpp" />
     <ClCompile Include="MonteCarlo.cpp" />
+    <ClCompile Include="neutron.cpp" />
+    <ClCompile Include="neutrons.cpp" />
     <ClCompile Include="pch.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
@@ -177,6 +185,7 @@
     </ClCompile>
     <ClCompile Include="input_reader.cpp" />
     <ClCompile Include="quadratic_surface.cpp" />
+    <ClCompile Include="vec3f.cpp" />
     <ClCompile Include="visualizer.cpp" />
   </ItemGroup>
   <ItemGroup>
